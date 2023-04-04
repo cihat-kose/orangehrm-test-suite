@@ -7,8 +7,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 // POM : Page Object Model
-public class GRP1_2_ASY extends Parent {
-    public GRP1_2_ASY() {
+public class GRP1_2_CD extends Parent {
+    public GRP1_2_CD() {
         PageFactory.initElements(GWD.getDriver(), this);
     }
 
