@@ -6,8 +6,8 @@ import org.openqa.selenium.support.PageFactory;
 import utilities.GWD;
 
 // POM : Page Object Model
-public class GRP1_13_SNI extends Parent {
-    public GRP1_13_SNI() {
+public class GRP1_13_ZY extends Parent {
+    public GRP1_13_ZY() {
         PageFactory.initElements(GWD.getDriver(), this);
     }
 
