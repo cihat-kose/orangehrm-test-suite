@@ -12,6 +12,11 @@ public class GRP1_9_ASY extends Parent {
     }
 
 
+    @FindBy(xpath = "//button[@class='oxd-button oxd-button--medium oxd-button--secondary']")
+    public WebElement addButton9;
+
+
+
     @FindBy(xpath="(//mat-option//span)[2]")
     private WebElement gradeLevel2;
 
