@@ -5,27 +5,26 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.GWD;
 
-// POM : Page Object Model
+// LeftNav olarak kullnilacak
+// sol taraftaki menuler burda
+
 public class GRP1_8_ZY extends Parent {
     public GRP1_8_ZY() {
         PageFactory.initElements(GWD.getDriver(), this);
     }
 
 
-    @FindBy(xpath="(//mat-option//span)[2]")
-    private WebElement gradeLevel2;
+    @FindBy(xpath="//span[text()='Admin']")
+    public WebElement Admin;
 
     public WebElement getWebElement(String strButton){
 
         switch (strButton)
         {
-            case "gradeLevel2" : return gradeLevel2;
+            case "Admin" : return Admin;
         }
         return null;
     }
 
 
-    public void deleteItem(String searchedText) {
-
-    }
 }
