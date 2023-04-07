@@ -22,31 +22,33 @@ import java.util.List;
 
 public class GRP1_3_AG {
    pages.GRP1_3_AG ag=new pages.GRP1_3_AG();
-    @Given("Navigate to OrangeHRM")
-    public void navigateToOrangeHRM() {
+
+    @Given("Navigate to OrangeHRM website")
+    public void navigateToOrangeHRMWebsite() {
         GWD.getDriver().get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-
     }
 
-    @When("Enter username and password and click login button")
-    public void enterUsernameAndPasswordAndClickLoginButton() {
-       ag.sendKeysFunction(ag.username,"Admin");
-       ag.sendKeysFunction(ag.password,"admin123");
-       ag.clickFunction(ag.loginButton);
-       // driver.switchTo().alert().accept();
+    @When("Enter username and password and click login")
+    public void enterUsernameAndPasswordAndClickLogin() {
+        ag.sendKeysFunction(ag.username,"Admin");
+        ag.sendKeysFunction(ag.password,"admin123");
+        ag.clickFunction(ag.loginButton);
+        // driver.switchTo().alert().accept();
     }
-    @And("Click to Admin and click to Add Button")
-    public void clickToAdminAndClickToAddButton() {
+
+    @And("Click to Admin Button and click to Add Button")
+    public void clickToAdminButtonAndClickToAddButton() {
         ag.clickFunction(ag.admin);
         ag.clickFunction(ag.addButton);
     }
+
     @And("Enter only mandatory fields and click save button")
     public void enterOnlyMandatoryFieldsAndClickSaveButton() {
 
 
         ag.sendKeysFunction(ag.employeeName,"O");
         ag.clickFunction(ag.OdisAdalwin);
-        ag.sendKeysFunction(ag.userUserName,"OrangeAyse17");
+        ag.sendKeysFunction(ag.userUserName,"OrangeAyse18");
         ag.sendKeysFunction(ag.userPassword,"OranGe12_34");
         ag.sendKeysFunction(ag.userComPassword,"OranGe12_34");
 
@@ -91,4 +93,6 @@ public class GRP1_3_AG {
             Assert.assertTrue(tabMenu1.get(i).getText().contains(tabMenuList.get(i)));
         }
     }
+
+
 }
