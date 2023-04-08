@@ -12,7 +12,7 @@ import utilities.GWD;
 public class GRP1_2_CD_StepDefinitions {
 
     GRP1_2_CD loc = new GRP1_2_CD();
-    String username = "MahoAga3";
+    String username = "MahoAga"+(int)(Math.random()*1000);
 
     @Given("Navigate to the Website")
     public void navigateToTheWebsite() {

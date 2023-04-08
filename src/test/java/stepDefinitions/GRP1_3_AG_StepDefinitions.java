@@ -39,12 +39,12 @@ public class GRP1_3_AG_StepDefinitions {
     }
 
     @And("Enter only mandatory fields and click save button")
-    public void enterOnlyMandatoryFieldsAndClickSaveButton() {
+    public void enterOnlyMandatoryFieldsAndClickSaveButton() throws InterruptedException {
 
 
         ag.sendKeysFunction(ag.employeeName,"O");
         ag.clickFunction(ag.OdisAdalwin);
-        ag.sendKeysFunction(ag.userUserName,"OrangeAyse18");
+        ag.sendKeysFunction(ag.userUserName,"OrangeAyse"+(int)(Math.random()*1000));
         ag.sendKeysFunction(ag.userPassword,"OranGe12_34");
         ag.sendKeysFunction(ag.userComPassword,"OranGe12_34");
 
@@ -62,8 +62,8 @@ public class GRP1_3_AG_StepDefinitions {
                 build();
         aksiyon.perform();
 
+        Thread.sleep(3000);
         ag.clickFunction(ag.saveButton);
-
 
     }
 
@@ -89,6 +89,5 @@ public class GRP1_3_AG_StepDefinitions {
             Assert.assertTrue(tabMenu1.get(i).getText().contains(tabMenuList.get(i)));
         }
     }
-
 
 }
