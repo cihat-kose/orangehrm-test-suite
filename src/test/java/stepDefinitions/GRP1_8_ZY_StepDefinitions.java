@@ -9,7 +9,7 @@ import utilities.GWD;
 import java.util.List;
 
 
-public class GRP1_8_ZY_steps {
+public class GRP1_8_ZY_StepDefinitions {
 
     GRP1_13_ZY dc= new GRP1_13_ZY();
     GRP1_8_ZY ln=new GRP1_8_ZY();

@@ -9,7 +9,7 @@ import org.testng.Assert;
 import pages.GRP1_4_ASY;
 import utilities.GWD;
 
-public class _04_userStoryASY {
+public class GRP1_4_ASY_StepDefinitions {
 
     GRP1_4_ASY locators4= new GRP1_4_ASY();
     @Given("Go to  mainpage")

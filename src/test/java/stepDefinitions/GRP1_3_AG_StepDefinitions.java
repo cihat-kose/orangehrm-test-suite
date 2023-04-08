@@ -9,18 +9,14 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import utilities.GWD;
 
-import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class GRP1_3_AG {
+public class GRP1_3_AG_StepDefinitions {
    pages.GRP1_3_AG ag=new pages.GRP1_3_AG();
 
     @Given("Navigate to OrangeHRM website")

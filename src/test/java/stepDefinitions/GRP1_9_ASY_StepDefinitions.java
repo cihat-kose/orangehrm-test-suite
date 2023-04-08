@@ -4,7 +4,7 @@ import io.cucumber.java.en.Then;
 import org.testng.Assert;
 import pages.GRP1_9_ASY;
 
-public class _09_userStoryASY {
+public class GRP1_9_ASY_StepDefinitions {
     GRP1_9_ASY loc9= new GRP1_9_ASY();
     @Then("Verify the visibility of addButton on the current page")
     public void verifyTheVisibilityOfAddButtonOnTheCurrentPage() {

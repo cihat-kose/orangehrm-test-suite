@@ -7,7 +7,7 @@ import io.cucumber.java.en.When;
 
 import utilities.GWD;
 
-public class GRP1_5_12_HG {
+public class GRP1_5_12_HG_StepDefinitions {
     pages.GRP1_5_12_HG hg=new pages.GRP1_5_12_HG();
 
     @Given("Navigate to OrangeHRM")

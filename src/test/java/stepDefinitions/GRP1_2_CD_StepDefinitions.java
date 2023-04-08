@@ -9,7 +9,7 @@ import org.openqa.selenium.interactions.Actions;
 import pages.GRP1_2_CD;
 import utilities.GWD;
 
-public class _01_CihanSteps {
+public class GRP1_2_CD_StepDefinitions {
 
     GRP1_2_CD loc = new GRP1_2_CD();
     String username = "MahoAga3";
