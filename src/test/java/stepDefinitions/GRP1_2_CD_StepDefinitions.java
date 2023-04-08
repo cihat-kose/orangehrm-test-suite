@@ -27,17 +27,15 @@ public class GRP1_2_CD_StepDefinitions {
         loc.clickFunction(loc.loginButton);
     }
 
-
     @And("Click on Admin link")
     public void clickOnAdminLink() {
         loc.clickFunction(loc.adminLink);
     }
 
-    @And("Click on add button")
-    public void clickOnAddButton() {
+    @And("Click on add the button")
+    public void clickOnAddTheButton() {
         loc.clickFunction(loc.addButton);
     }
-
     @And("Create an ESS User")
     public void createAnESSUser() throws InterruptedException {
 
@@ -66,11 +64,9 @@ public class GRP1_2_CD_StepDefinitions {
 
     }
 
-
     @Then("ESS User should successfully added to the list")
     public void essUserShouldSuccessfullyAddedToTheList() {
-
         loc.verifyContainsTextFunction(loc.successMessage,"Success");
-
     }
+
 }

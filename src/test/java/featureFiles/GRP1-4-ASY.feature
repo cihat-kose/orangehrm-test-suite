@@ -1,6 +1,7 @@
 Feature: The registry attempt without entering inputs to the mandatory fields
 
   Scenario: The registry attempt of users without relevant inputs
+
     Given  Go to  mainpage
     When Write your admin username and password
     Then Click on Admin, user management page

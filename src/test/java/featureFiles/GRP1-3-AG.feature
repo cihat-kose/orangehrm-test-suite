@@ -1,6 +1,5 @@
 Feature:New user create
 
-
   Scenario: Create a new user by mandatory fields
 
     Given Navigate to OrangeHRM website

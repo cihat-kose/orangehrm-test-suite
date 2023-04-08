@@ -5,7 +5,7 @@ Feature: Login Functionality
 
     Given Navigate to OrangeHRM
 
-    Then Enter username and password and click login button
+    Then Enter username and password then click login button
 
     And Click on the element in LeftNav
       |Admin|
