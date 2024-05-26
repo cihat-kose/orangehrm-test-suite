@@ -53,8 +53,8 @@ public class GRP1_3_AG extends Parent {
     @FindBy(xpath="//*[text()='Success']")
     public WebElement successMessage;
 
-    @FindBy(xpath="//*[text()='Odis  Adalwin']")
-    public WebElement OdisAdalwin;
+    @FindBy(xpath="//*[text()='Peter Mac Anderson']")
+    public WebElement peterMacAnderson;
 
 
 

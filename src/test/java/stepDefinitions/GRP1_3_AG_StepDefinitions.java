@@ -17,7 +17,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class GRP1_3_AG_StepDefinitions {
-   pages.GRP1_3_AG ag=new pages.GRP1_3_AG();
+    pages.GRP1_3_AG ag = new pages.GRP1_3_AG();
 
     @Given("Navigate to OrangeHRM website")
     public void navigateToOrangeHRMWebsite() {
@@ -26,8 +26,8 @@ public class GRP1_3_AG_StepDefinitions {
 
     @When("Enter username and password and click login")
     public void enterUsernameAndPasswordAndClickLogin() {
-        ag.sendKeysFunction(ag.username,"Admin");
-        ag.sendKeysFunction(ag.password,"admin123");
+        ag.sendKeysFunction(ag.username, "Admin");
+        ag.sendKeysFunction(ag.password, "admin123");
         ag.clickFunction(ag.loginButton);
         // driver.switchTo().alert().accept();
     }
@@ -42,24 +42,15 @@ public class GRP1_3_AG_StepDefinitions {
     public void enterOnlyMandatoryFieldsAndClickSaveButton() throws InterruptedException {
 
 
-        ag.sendKeysFunction(ag.employeeName,"O");
-        ag.clickFunction(ag.OdisAdalwin);
-        ag.sendKeysFunction(ag.userUserName,"OrangeAyse"+(int)(Math.random()*1000));
-        ag.sendKeysFunction(ag.userPassword,"OranGe12_34");
-        ag.sendKeysFunction(ag.userComPassword,"OranGe12_34");
+        ag.sendKeysFunction(ag.employeeName, "P");
+        ag.clickFunction(ag.peterMacAnderson);
+        ag.sendKeysFunction(ag.userUserName, "OrangeAyse" + (int) (Math.random() * 1000));
+        ag.sendKeysFunction(ag.userPassword, "OranGe12_34");
+        ag.sendKeysFunction(ag.userComPassword, "OranGe12_34");
 
 
         Actions aksiyonlar = new Actions(GWD.getDriver());
-        Action  aksiyon = aksiyonlar.click(ag.selectRole).
-                sendKeys(Keys.DOWN).
-                sendKeys(Keys.DOWN).
-                sendKeys(Keys.ENTER) .
-                sendKeys(Keys.TAB).
-                sendKeys(Keys.TAB).
-                sendKeys(Keys.DOWN).
-                sendKeys(Keys.DOWN).
-                sendKeys(Keys.ENTER).
-                build();
+        Action aksiyon = aksiyonlar.click(ag.selectRole).sendKeys(Keys.DOWN).sendKeys(Keys.DOWN).sendKeys(Keys.ENTER).sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys(Keys.DOWN).sendKeys(Keys.DOWN).sendKeys(Keys.ENTER).build();
         aksiyon.perform();
 
         Thread.sleep(3000);
@@ -67,17 +58,17 @@ public class GRP1_3_AG_StepDefinitions {
 
     }
 
-    @Then("User should add succesfully")
-    public void userShouldAddSuccesfully() {
+    @Then("User should add successfully")
+    public void userShouldAddSuccessfully() {
 
-        ag.verifyContainsTextFunction(ag.successMessage,"Success");
+        ag.verifyContainsTextFunction(ag.successMessage, "Success");
 
-        }
+    }
 
     @Then("I verify that all the required elements are displayed")
     public void iVerifyThatAllTheRequiredElementsAreDisplayed() {
 
-        List<String> tabMenuList = new ArrayList<>(Arrays.asList("User Role","Employee Name","Status","Username","Password","Confirm Password","Cancel","Save"));
+        List<String> tabMenuList = new ArrayList<>(Arrays.asList("User Role", "Employee Name", "Status", "Username", "Password", "Confirm Password", "Cancel", "Save"));
 
         List<WebElement> tabMenu = GWD.getDriver().findElements(By.xpath("//label[@class='oxd-label oxd-input-field-required']"));
         List<WebElement> tabMenu1 = GWD.getDriver().findElements(By.xpath("//div[@class='oxd-form-actions']//button"));
@@ -89,5 +80,4 @@ public class GRP1_3_AG_StepDefinitions {
             Assert.assertTrue(tabMenu1.get(i).getText().contains(tabMenuList.get(i)));
         }
     }
-
 }

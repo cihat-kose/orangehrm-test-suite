@@ -39,8 +39,8 @@ public class GRP1_2_CD_StepDefinitions {
     @And("Create an ESS User")
     public void createAnESSUser() throws InterruptedException {
 
-        loc.sendKeysFunction(loc.employeeName, "O");
-        loc.clickFunction(loc.OdisAdalwin);
+        loc.sendKeysFunction(loc.employeeName, "P");
+        loc.clickFunction(loc.peterMacAnderson);
         loc.sendKeysFunction(loc.usernameEss, username);
         loc.sendKeysFunction(loc.passwordEss, "OranGe12_34");
         loc.sendKeysFunction(loc.confirmPasswordEss, "OranGe12_34");

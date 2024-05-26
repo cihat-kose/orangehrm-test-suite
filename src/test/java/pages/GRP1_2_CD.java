@@ -38,8 +38,8 @@ public class GRP1_2_CD extends Parent {
     @FindBy(css="[placeholder='Type for hints...']")
     public WebElement employeeName;
 
-    @FindBy(xpath="//*[text()='Odis  Adalwin']")
-    public WebElement OdisAdalwin;
+    @FindBy(xpath="//*[text()='Peter Mac Anderson']")
+    public WebElement peterMacAnderson;
 
     @FindBy(xpath="(//input[@class='oxd-input oxd-input--active'])[2]")
     public WebElement usernameEss;
