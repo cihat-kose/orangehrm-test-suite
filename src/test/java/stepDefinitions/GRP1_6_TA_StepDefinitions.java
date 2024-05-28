@@ -34,7 +34,7 @@ public class GRP1_6_TA_StepDefinitions {
 
     }
 
-    @Then("verify that notification messages “no records found” and “invalid” in red color displayed.")
+    @Then("Verify that notification messages “no records found” and “invalid” in red color displayed.")
     public void verifyThatNotificationMessagesNoRecordsFoundAndInvalidInRedColorDisplayed() {
 
         e6.verifyContainsTextFunction(e6.noRecordsFound,"No");

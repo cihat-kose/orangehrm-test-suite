@@ -1,8 +1,6 @@
 Feature:Password Functionality
 
-
   Scenario:Password control and notification messages
-
     Given Navigate to OrangeHRM
     When Enter username and password and click login button
     And Click to Admin and click to Add Button

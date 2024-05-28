@@ -1,24 +1,17 @@
 Feature: Login Functionality
 
   Scenario Outline: As an Admin user I should be able to see notification messages displayed, when I enter a value in to the username field
- which was already taken
-
+  which was already taken
     Given Navigate to OrangeHRM
-
     Then Enter username and password then click login button
-
     And Click on the element in LeftNav
-      |Admin|
-
+      | Admin |
     Then Click on the element in Dialog
       | UserManagment |
-      | addButton |
-
+      | addButton     |
     When User sending the keys in Dialog Content
-      | userNameInput       | <name> |
-
+      | userNameInput | <name> |
     Then Notification messages “Already exists” should be displayed.
-
     Examples:
-      | name |
+      | name          |
       | Dominic.Chase |

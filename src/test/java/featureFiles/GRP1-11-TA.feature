@@ -1,8 +1,6 @@
 Feature: Testing Orange HRM
 
   Scenario: Add User heading when an Admin is logining
-
-
     Given Navigate to site
     Then Login as Admin
     And Navigate to Admin page

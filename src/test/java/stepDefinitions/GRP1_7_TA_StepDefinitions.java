@@ -9,7 +9,7 @@ import java.util.UUID;
 public class GRP1_7_TA_StepDefinitions {
 
     GRP1_7_TA e7 = new GRP1_7_TA();
-    @When("enter a value in to the username field which is less than {int} characters")
+    @When("Enter a value in to the username field which is less than {int} characters")
     public void enterAValueInToTheUsernameFieldWhichIsLessThanCharacters(int sayi) {
 
             String  Rndmname = UUID.randomUUID().toString().substring(0, sayi-1);
@@ -22,7 +22,7 @@ public class GRP1_7_TA_StepDefinitions {
     }
 
 
-    @Then("verify that notification messages “Should be at least five characters” in red color displayed.")
+    @Then("Verify that notification messages “Should be at least five characters” in red color displayed.")
     public void verifyThatNotificationMessagesShouldBeAtLeastFiveCharactersInRedColorDisplayed() {
     }
 
