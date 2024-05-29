@@ -45,7 +45,6 @@ public class GRP1_2_CD_StepDefinitions {
         loc.sendKeysFunction(loc.passwordEss, "OranGe12_34");
         loc.sendKeysFunction(loc.confirmPasswordEss, "OranGe12_34");
 
-
         Actions aksiyonlar = new Actions(GWD.getDriver());
         Action aksiyon = aksiyonlar.click(loc.userRole).
                 sendKeys(Keys.DOWN).
@@ -61,12 +60,10 @@ public class GRP1_2_CD_StepDefinitions {
 
         Thread.sleep(3000);
         loc.clickFunction(loc.saveButton);
-
     }
 
     @Then("ESS User should successfully added to the list")
     public void essUserShouldSuccessfullyAddedToTheList() {
         loc.verifyContainsTextFunction(loc.successMessage,"Success");
     }
-
 }

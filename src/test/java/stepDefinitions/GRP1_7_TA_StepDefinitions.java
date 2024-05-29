@@ -12,10 +12,10 @@ public class GRP1_7_TA_StepDefinitions {
     @When("Enter a value in to the username field which is less than {int} characters")
     public void enterAValueInToTheUsernameFieldWhichIsLessThanCharacters(int sayi) {
 
-            String  Rndmname = UUID.randomUUID().toString().substring(0, sayi-1);
-            System.out.println("Random Name: " + Rndmname);
+            String  randomName = UUID.randomUUID().toString().substring(0, sayi-1);
+            System.out.println("Random Name: " + randomName);
 
-            e7.sendKeysFunction(e7.adminUsername,Rndmname);
+            e7.sendKeysFunction(e7.adminUsername,randomName);
             e7.verifyContainsTextFunction(e7.shouldBe5Chracters,"at least 5");
 
 

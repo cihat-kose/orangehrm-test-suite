@@ -30,23 +30,17 @@ public class GRP1_6_TA_StepDefinitions {
     @And("Enter an Invalid name in to the Employee name field")
     public void enterAnInvalidNameInToTheEmployeeNameField() {
         e6.sendKeysFunction(e6.employeeName,"Haydar");
-
-
     }
 
     @Then("Verify that notification messages “no records found” and “invalid” in red color displayed.")
     public void verifyThatNotificationMessagesNoRecordsFoundAndInvalidInRedColorDisplayed() {
-
         e6.verifyContainsTextFunction(e6.noRecordsFound,"No");
         e6.clickFunction(e6.boslukAdmin);
         e6.verifyContainsTextFunction(e6.invalid,"Invalid");
-
     }
-
 
     @And("Navigate to Admin page")
     public void navigateToAdminPage() {
         e6.clickFunction(e6.navAdmin);
     }
-
 }

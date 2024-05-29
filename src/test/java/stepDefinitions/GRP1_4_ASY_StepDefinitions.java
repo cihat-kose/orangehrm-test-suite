@@ -11,7 +11,8 @@ import utilities.GWD;
 
 public class GRP1_4_ASY_StepDefinitions {
 
-    GRP1_4_ASY locators4= new GRP1_4_ASY();
+    GRP1_4_ASY locators4 = new GRP1_4_ASY();
+
     @Given("Go to  mainpage of the test object")
     public void goToMainpageOfTheTestObject() {
         GWD.getDriver().get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
@@ -36,7 +37,6 @@ public class GRP1_4_ASY_StepDefinitions {
 
     @And("Click on saveButton without filling up any mandatory field")
     public void clickOnSaveButtonWithoutFillingUpAnyMandatoryField() {
-
         locators4.clickFunction(locators4.saveButton4);
     }
 

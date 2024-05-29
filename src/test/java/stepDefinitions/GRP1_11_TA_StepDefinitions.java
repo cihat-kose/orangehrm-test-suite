@@ -10,6 +10,5 @@ public class GRP1_11_TA_StepDefinitions {
     @Then("Verify that Add User heading is displayed")
     public void verifyThatAddUserHeadingIsDisplayed() {
         e11.verifyContainsTextFunction(e11.addUserText, "Add User");
-
     }
 }

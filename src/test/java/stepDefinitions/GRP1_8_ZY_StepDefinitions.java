@@ -1,7 +1,9 @@
 package stepDefinitions;
 
 import io.cucumber.datatable.DataTable;
-import io.cucumber.java.en.*;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import org.openqa.selenium.WebElement;
 import pages.GRP1_13_ZY;
 import pages.GRP1_8_ZY;
@@ -14,12 +16,11 @@ public class GRP1_8_ZY_StepDefinitions {
     GRP1_13_ZY dc = new GRP1_13_ZY();
     GRP1_8_ZY ln = new GRP1_8_ZY();
 
-
     @Then("Enter username and password then click login button")
     public void enterUsernameAndPasswordThenClickLoginButton() {
-        dc.sendKeysFunction(dc.username, "Admin");
-        dc.sendKeysFunction(dc.loginPassword,"admin123");
-        dc.clickFunction(dc.loginButton);
+        dc.sendKeysFunction(GRP1_13_ZY.username, "Admin");
+        dc.sendKeysFunction(GRP1_13_ZY.loginPassword, "admin123");
+        dc.clickFunction(GRP1_13_ZY.loginButton);
     }
 
     @And("Click on the element in LeftNav")
@@ -31,7 +32,6 @@ public class GRP1_8_ZY_StepDefinitions {
             WebElement element = ln.getWebElement(strButton);
             ln.clickFunction(element);
         }
-
     }
 
     @Then("Click on the element in Dialog")
@@ -58,6 +58,5 @@ public class GRP1_8_ZY_StepDefinitions {
     @Then("Notification messages “Already exists” should be displayed.")
     public void notificationMessagesAlreadyExistsShouldBeDisplayed() {
         dc.verifyContainsTextFunction(dc.alreadyExistMessage, "Already exists");
-
     }
 }
