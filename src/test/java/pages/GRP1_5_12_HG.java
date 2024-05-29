@@ -24,19 +24,10 @@ public class GRP1_5_12_HG extends Parent {
     public WebElement AddBtn;
     @FindBy(xpath="//*[text()=' Save ']")
     public WebElement SaveBtn;
-
     @FindBy(xpath="(//input[@type='password'])[1]")
     public WebElement pass;
-
-    @FindBy(xpath="//span[text()='Should have at least 8 characters']")
+    @FindBy(xpath="//span[text()='Should have at least 7 characters']")
     public WebElement message;
     @FindBy(xpath="//span[text()='Required']")
     public WebElement required;
-
-
-
-
-
-
-
 }

@@ -23,7 +23,7 @@ public class GRP1_5_12_HG_StepDefinitions {
         // driver.switchTo().alert().accept();
     }
 
-    @And("Click to Admin and click to Add Button")
+    @And("Click to admin and click to add button")
     public void clickToAdminAndClickToAddButton() {
         hg.clickFunction(hg.AdminBtn);
         hg.clickFunction(hg.AddBtn);
@@ -46,8 +46,8 @@ public class GRP1_5_12_HG_StepDefinitions {
         hg.clickFunction(hg.SaveBtn);
     }
 
-    @Then("The message Should have at least eight characters should be displayed in red.")
-    public void theMessageShouldHaveAtLeastEightCharactersShouldBeDisplayedInRed() {
-        hg.verifyContainsTextFunction(hg.message, "Should have at least 8 characters");
+    @Then("The message should have at least seven characters should be displayed in red.")
+    public void theMessageShouldHaveAtLeastSevenCharactersShouldBeDisplayedInRed() {
+        hg.verifyContainsTextFunction(hg.message, "Should have at least 7 characters");
     }
 }

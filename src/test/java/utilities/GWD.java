@@ -12,8 +12,9 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class GWD {
-    private static ThreadLocal<WebDriver> threadDriver=new ThreadLocal<>();
-    private static ThreadLocal<String> threadBrowserName=new ThreadLocal<>();
+
+    private static final ThreadLocal<WebDriver> threadDriver = new ThreadLocal<>();
+    private static final ThreadLocal<String> threadBrowserName = new ThreadLocal<>();
 
     public static WebDriver getDriver() {
 
@@ -24,12 +25,11 @@ public class GWD {
         logger.setLevel(Level.SEVERE);
         System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, "true");
 
-        if (threadBrowserName.get() == null)
-            threadBrowserName.set("chrome");
+        if (threadBrowserName.get() == null) threadBrowserName.set("chrome");
 
         if (threadDriver.get() == null) {
 
-            switch(threadBrowserName.get()){
+            switch (threadBrowserName.get()) {
 
                 case "edge":
                     threadDriver.set(new EdgeDriver());
@@ -59,12 +59,12 @@ public class GWD {
         if (threadDriver.get() != null) {
             threadDriver.get().quit();
             WebDriver driver = threadDriver.get();
-            driver=null;
+            driver = null;
             threadDriver.set(driver);
         }
     }
 
-    public static void threadBrowserSet(String browser){
+    public static void threadBrowserSet(String browser) {
         threadBrowserName.set(browser);
     }
 }
