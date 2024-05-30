@@ -8,13 +8,14 @@ import utilities.GWD;
 
 // POM : Page Object Model
 public class GRP1_6_TA extends Parent {
+
     public GRP1_6_TA() {
         PageFactory.initElements(GWD.getDriver(), this);
     }
 
-
     @FindBy(name="username")
     public WebElement username;
+
     @FindBy(name="password")
     public WebElement password;
 
@@ -35,20 +36,7 @@ public class GRP1_6_TA extends Parent {
 
     @FindBy(xpath="//span[@class='oxd-text oxd-text--span oxd-input-field-error-message oxd-input-group__message' and text()='Invalid']")
     public WebElement invalid;
+
     @FindBy(xpath="//h6[@class='oxd-text oxd-text--h6 oxd-topbar-header-breadcrumb-module']")
     public WebElement boslukAdmin;
-
-
-
-    //    public WebElement getWebElement(String strButton){
-//
-//        switch (strButton)
-//        {
-//            case "gradeLevel2" : return gradeLevel2;
-//        }
-//        return null;
-//    }
-    public void deleteItem(String searchedText) {
-
-    }
 }

@@ -9,22 +9,19 @@ import utilities.GWD;
 // sol taraftaki menuler burda
 
 public class GRP1_8_ZY extends Parent {
+
     public GRP1_8_ZY() {
         PageFactory.initElements(GWD.getDriver(), this);
     }
-
 
     @FindBy(xpath="//span[text()='Admin']")
     public WebElement Admin;
 
     public WebElement getWebElement(String strButton){
-
         switch (strButton)
         {
             case "Admin" : return Admin;
         }
         return null;
     }
-
-
 }

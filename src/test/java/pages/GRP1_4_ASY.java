@@ -9,9 +9,11 @@ import java.util.List;
 
 // POM : Page Object Model
 public class GRP1_4_ASY extends Parent {
+
     public GRP1_4_ASY() {
         PageFactory.initElements(GWD.getDriver(), this);
     }
+
     @FindBy(css = "[name='username']")
     public WebElement username4;
 
@@ -43,10 +45,5 @@ public class GRP1_4_ASY extends Parent {
             case "gradeLevel2" : return gradeLevel2;
         }
         return null;
-    }
-
-
-    public void deleteItem(String searchedText) {
-
     }
 }

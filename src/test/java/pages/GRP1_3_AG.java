@@ -1,18 +1,16 @@
 package pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.Select;
 import utilities.GWD;
 
 // POM : Page Object Model
 public class GRP1_3_AG extends Parent {
+
     public GRP1_3_AG() {
         PageFactory.initElements(GWD.getDriver(), this);
     }
-
 
     @FindBy(css = "[name=username]")
     public WebElement username;
@@ -55,12 +53,5 @@ public class GRP1_3_AG extends Parent {
 
     @FindBy(xpath="//*[text()='Peter Mac Anderson']")
     public WebElement peterMacAnderson;
-
-
-
-
-
-
-
 }
 

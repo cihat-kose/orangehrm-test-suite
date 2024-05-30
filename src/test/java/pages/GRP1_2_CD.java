@@ -1,18 +1,17 @@
 package pages;
 
-import utilities.GWD;
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import utilities.GWD;
 
 
 
 public class GRP1_2_CD extends Parent {
+
     public GRP1_2_CD() {
         PageFactory.initElements(GWD.getDriver(), this);
     }
-
 
     @FindBy(css="[name='username']")
     public WebElement username;
@@ -55,6 +54,4 @@ public class GRP1_2_CD extends Parent {
 
     @FindBy(xpath="//*[text()='Success']")
     public WebElement successMessage;
-
-
 }

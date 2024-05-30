@@ -9,8 +9,8 @@ import utilities.GWD;
 // kullanıcı ile dialogla veri alan bölümler
 
 public class GRP1_13_ZY extends Parent {
-    public GRP1_13_ZY() {PageFactory.initElements(GWD.getDriver(), this);}
 
+    public GRP1_13_ZY() {PageFactory.initElements(GWD.getDriver(), this);}
 
     @FindBy(css = "input[placeholder='Username']")
     public static WebElement username;
@@ -23,6 +23,7 @@ public class GRP1_13_ZY extends Parent {
 
     @FindBy(xpath="//span[text()='User Management ']")
     public static WebElement UserManagment;
+
     @FindBy(xpath="//button[text()=' Add ']")
     public static WebElement addButton;
 
@@ -35,23 +36,18 @@ public class GRP1_13_ZY extends Parent {
     @FindBy(xpath ="//input[@type='password'][1]")
     public static WebElement userPassword;
 
-    @FindBy(xpath="//span[text()='Your password must contain a lower-case letter, an upper-case letter, a digit and a special character. Try a different password']")
+    @FindBy(xpath="//span[text()='Your password must contain minimum 1 lower-case letter']")
     public WebElement lowerCaseMessage;
 
     ////span[ contains(text(),'must contain a lower-case letter')]
 
     public WebElement getWebElement(String strButton) {
-
         switch (strButton) {
             case "UserManagment": return UserManagment;
             case "addButton": return addButton;
             case "userNameInput": return userNameInput;
             case "userPassword": return userPassword;
-
         }
-
         return null;
     }
-
-
  }

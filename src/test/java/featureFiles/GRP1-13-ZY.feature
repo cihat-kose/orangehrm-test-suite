@@ -13,7 +13,7 @@ Feature:  Login Functionality
   which doesn’t have lower case character.
     When User sending the keys in Dialog Content
       | userPassword | <password> |
-    Then Notification messages “... password must contain a lower-case letter ... ” should be displayed.
+    Then Notification messages “... password must contain minimum 1 lower-case letter ... ” should be displayed.
     Examples:
       | password     |
       | <DEMOCODE*9> |
