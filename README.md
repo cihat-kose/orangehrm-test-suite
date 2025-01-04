@@ -151,7 +151,6 @@ The dependencies for this project are managed in the `pom.xml` file and include:
 - [HavvaGonul](https://github.com/HavvaGonul) – **Software Tester**  
 - [AyseGun18](https://github.com/AyseGun18) – **Software Tester**  
 - [yilmazas](https://github.com/yilmazas) – **Software Tester**  
-- [Testing-Team-1](https://github.com/Testing-Team-1) – **Software Tester**  
 - [CihanDilber](https://github.com/CihanDilber) – **Software Tester**  
 - [TlpAyn](https://github.com/TlpAyn) – **Software Tester**  
 
