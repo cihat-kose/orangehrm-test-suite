@@ -1,4 +1,4 @@
-# OrangeHRM Selenium Cucumber UI Test Automation
+# OrangeHRM Test Suite
 
 ![Cucumber](https://img.shields.io/badge/Cucumber-23D96C?style=for-the-badge&logo=cucumber&logoColor=white)
 ![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white)
@@ -165,7 +165,7 @@ To contribute:
 ---
 
 ## License
-This project is licensed under the MIT License - see the `LICENSE` file for details.  
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.  
 
 ---
 
