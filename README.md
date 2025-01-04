@@ -146,14 +146,14 @@ The dependencies for this project are managed in the `pom.xml` file and include:
 ---
 
 ## Contributors
-- [cihat-kose](https://github.com/cihat-kose) – **Team Lead / Software Tester**  
-- [Zafer-Yilmaz](https://github.com/Zafer-Yilmaz) – **Software Tester**  
-- [HavvaGonul](https://github.com/HavvaGonul) – **Software Tester**  
-- [AyseGun18](https://github.com/AyseGun18) – **Software Tester**  
-- [yilmazas](https://github.com/yilmazas) – **Software Tester**  
-- [Testing-Team-1](https://github.com/Testing-Team-1) – **Software Tester**  
-- [CihanDilber](https://github.com/CihanDilber) – **Software Tester**  
-- [TlpAyn](https://github.com/TlpAyn) – **Software Tester**  
+- [cihat-kose](https://github.com/cihat-kose) – **Team Lead / Software Tester**
+- [AyseGun18](https://github.com/AyseGun18) – **Software Tester**
+- [CihanDilber](https://github.com/CihanDilber) – **Software Tester**
+- [HavvaGonul](https://github.com/HavvaGonul) – **Software Tester**
+- [seymanuripek](https://github.com/seymanuripek) – **Software Tester**
+- [TlpAyn](https://github.com/TlpAyn) – **Software Tester**
+- [yilmazas](https://github.com/yilmazas) – **Software Tester**
+- [Zafer-Yilmaz](https://github.com/Zafer-Yilmaz) – **Software Tester**
 
 To contribute:
 
